@@ -1,0 +1,10 @@
+{% autoescape off %}
+
+Hi {{user.first_name}},
+
+Royxatdan otishni tasdiqlash uchun quyidagi havolani bosing.
+http://{{domain}}{% url 'activate' uidb64=uid token=token %}
+
+Agar bu siz emas deb o'ylasangiz, ushbu xatga e'tibor bermang.
+
+{% endautoescape %}
